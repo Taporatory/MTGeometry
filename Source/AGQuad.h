@@ -58,6 +58,7 @@ inline double AGQuadGetBiggestY(AGQuad q);
 inline CGRect AGQuadGetBoundingRect(AGQuad q);
 inline AGPoint AGQuadGetCenter(AGQuad q);
 inline CGSize AGQuadGetSize(AGQuad q);
+inline CGFloat AGQuadGetArea(AGQuad q);
 void AGQuadGetXValues(AGQuad q, double *out_values);
 void AGQuadGetYValues(AGQuad q, double *out_values);
 inline AGQuad AGQuadInterpolation(AGQuad q1, AGQuad q2, double progress);

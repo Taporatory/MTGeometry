@@ -25,7 +25,7 @@
 
 typedef union AGLine {
     struct { AGPoint start, end; };
-    double v[2];
+    AGPoint v[2];
 } AGLine;
 
 extern const AGLine AGLineZero;

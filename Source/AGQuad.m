@@ -227,6 +227,16 @@ extern CGSize AGQuadGetSize(AGQuad q)
     return smallestRect.size;
 }
 
+extern CGFloat AGQuadGetArea(AGQuad q) //Brahmagupta's formula
+{
+    CGFloat a = sqrt(pow(q.tl.x - q.bl.x, 2.0f) + pow(q.tl.y - q.bl.y, 2.0f));
+    CGFloat b = sqrt(pow(q.bl.x - q.br.x, 2.0f) + pow(q.bl.y - q.br.y, 2.0f));
+    CGFloat c = sqrt(pow(q.br.x - q.tr.x, 2.0f) + pow(q.br.y - q.tr.y, 2.0f));
+    CGFloat d = sqrt(pow(q.tr.x - q.tl.x, 2.0f) + pow(q.tr.y - q.tl.y, 2.0f));
+    CGFloat s = (a + b + c + d) * 0.5;
+    return sqrt((s - a) * (s - b) * (s - c) * (s - d));
+}
+
 void AGQuadGetXValues(AGQuad q, double *out_values)
 {
     for(int i = 0; i < 4; i++)
