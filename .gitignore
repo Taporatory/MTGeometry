@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 /DemoApplication/AGGeometryKit.xcodeproj/xcuserdata/
 /DemoApplication/AGGeometryKit.xcodeproj/project.xcworkspace/xcuserdata/
 DemoApplication/UserInterfaceState.xcuserstate*
 DemoApplication/WorkspaceSettings.xcsettings
 /DemoApplication/.idea/
+=======
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+>>>>>>> 777d58cc14af57ac262c4d4486cd6945db3d9f65
